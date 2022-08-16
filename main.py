@@ -21,6 +21,7 @@ class Snake:
             bit.goto(x, 0)
             x += 10
 
+    # method added to move forward
     def mov_forward(self):
         for i in range(len(self.all_bits)-1, 0, -1):
             new_x = self.all_bits[i - 1].xcor()
