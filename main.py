@@ -29,6 +29,14 @@ class Snake:
             self.all_bits[i].goto(new_x, new_y)
         self.all_bits[0].forward(20)
 
+    def turn_right(self):
+        self.all_bits[0].right(90)
+        self.mov_forward()
+
+    def turn_left(self):
+        self.all_bits[0].left(90)
+        self.mov_forward()
+
 
 snake = Snake()
 is_game_on = True
